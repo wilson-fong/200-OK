@@ -13,6 +13,7 @@ import { LoginComponent } from './components/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
 import { PoolComponent } from './components/pool/pool.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PoolComponent } from './components/pool/pool.component';
     HomeComponent,
     LoginComponent,
     BsNavbarComponent,
-    PoolComponent
+    PoolComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { PoolComponent } from './components/pool/pool.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'profile', component: ProfileComponent }
     ])
   ],
   providers: [],

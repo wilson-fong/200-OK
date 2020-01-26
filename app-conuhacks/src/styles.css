@@ -6,5 +6,11 @@ main {
     top: 55px;
 }
 body{
-    background-color:red ;
+    background-color:red;
+}
+
+.allo {
+    height: 100%;
+    width: 100%;
+    background: url(http://www.allwhitebackground.com/images/6/Professional-Powerpoint-Background-High-Quality-Image.jpg);
 }
