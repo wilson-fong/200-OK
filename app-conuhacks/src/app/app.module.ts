@@ -13,6 +13,8 @@ import { LoginComponent } from './components/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
 import { RegisterComponent } from './components/register/register.component';
+import { MatchComponent } from './components/match/match.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RegisterComponent } from './components/register/register.component';
     HomeComponent,
     LoginComponent,
     BsNavbarComponent,
-    RegisterComponent
+    RegisterComponent,
+    MatchComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,7 @@ import { RegisterComponent } from './components/register/register.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'search', component: SearchComponent },
     ])
   ],
   providers: [],

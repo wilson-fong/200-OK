@@ -11,3 +11,7 @@ main {
     width: 100%;
     background: url(http://www.allwhitebackground.com/images/6/Professional-Powerpoint-Background-High-Quality-Image.jpg);
 }
+
+app-root{
+    height:20%;
+}
