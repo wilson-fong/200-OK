@@ -1,1 +1,15 @@
 <img class="gender" src="https://image.shutterstock.com/z/stock-vector-female-symbol-in-simple-outline-pink-color-design-female-sexual-orientation-icon-vector-gender-1258648204.jpg">
+
+<h2>All hashtags</h2>
+<ul>
+    <li *ngFor="let hashtag of hashtags">
+      #{{hashtag.name}}
+    </li>
+</ul>
+
+<h2>My hashtags</h2>
+<ul>
+    <li *ngFor="let hashtag of myHashtags">
+      #{{hashtag.name}}
+    </li>
+</ul>

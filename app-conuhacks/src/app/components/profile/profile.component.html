@@ -1,1 +1,14 @@
-<p>profile works!</p>
+<div *ngIf="loaded == true">
+    <label>First Name:&nbsp;</label>
+    <input [(ngModel)]="user$.firstName" placeholder=" First Name"><br>
+    <label>Last Name:&nbsp;</label>
+    <input [(ngModel)]="user$.lastName" placeholder=" Last Name"><br>
+    <label>Email:&nbsp;</label>
+    <input [(ngModel)]="user$.email" placeholder=" Email"><br>
+    <label>Gender:&nbsp;</label>
+    <input [(ngModel)]="user$.gender" placeholder=" Gender"><br>
+    <!-- <input [checked]="user$.gender == maleKey" [(ngModel)]="user$.gender" type="radio"> Male
+    <input [checked]="user$.gender != maleKey" [(ngModel)]="user$.gender" type="radio"> Female<br> -->
+    <label>Age:&nbsp;</label>
+    <input [(ngModel)]="user$.age" placeholder=" Age"><br>
+<div>
