@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <ng-template #anonymousUser>
-          <li class="nav-item">
+          <div class="nav">
             <a class="nav-link" routerLink="/login">Login</a>
             <a class="nav-link" routerLink="/search">Search</a>
-          </li>
+          </div>
         </ng-template>
         <li ngbDropdown *ngIf="user$ | async as user; else anonymousUser" class="nav-item dropdown">
           <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"

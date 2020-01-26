@@ -1,5 +1,11 @@
 .gender{
-    border-radius: 50%;
-    width:10%;
-    height:10% ;
+    
+    width:12%;
+    height:12% ;
+    margin-left:45%;
+}
+
+.search{
+    border-style: solid;
+    background-color:#F0F0F0;
 }
