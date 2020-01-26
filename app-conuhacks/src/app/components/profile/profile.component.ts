@@ -1,6 +1,5 @@
 import { HttpServiceService } from './../../services/http-service.service';
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/observable';
 
 @Component({
   selector: 'app-profile',
