@@ -1,5 +1,6 @@
 import { HttpServiceService } from './../../services/http-service.service';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs/observable';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent  {
+  users$;
+  data;
+
   constructor(private httpService: HttpServiceService) {
-    httpService.getUsers().subscribe(x => console.log(x));
+    let currentUser = JSON.parse(localStorage.getItem('user'));
+    
+    this.users$ = httpService.getUsers().then(data => {
+      this.users$ = data;
+      console.log(data);
+    });
   }
 }

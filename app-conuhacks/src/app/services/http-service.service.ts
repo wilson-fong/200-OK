@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class HttpServiceService {
-
+  users;
   constructor(private httpClient: HttpClient) { }
 
   getUsers() {
-    return this.httpClient.get("https:app-conuhacks.firebaseio.com/users.json");
+    return this.httpClient.get("https:app-conuhacks.firebaseio.com/users.json").toPromise();
   }
 }
