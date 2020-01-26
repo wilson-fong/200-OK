@@ -2,7 +2,6 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { Component } from '@angular/core';
 import * as firebase from 'firebase';
 import { Observable } from 'rxjs/Observable';
-import {parse, stringify} from 'flatted/esm';
 
 @Component({
   selector: 'bs-navbar',
@@ -14,9 +13,6 @@ export class BsNavbarComponent {
 
   constructor(private afAuth: AngularFireAuth) {
     this.user$ = afAuth.authState;
-
-    localStorage.setItem('user', stringify(this.user$));
-    //JSON.parse(localStorage.getItem('user'));
   }
 
   ngOnInit() {

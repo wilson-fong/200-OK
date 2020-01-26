@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <form>
     <label>First Name:</label>
@@ -12,3 +13,19 @@
     <label>What are you looking for? (separate by comma)</label><br>
     <input placeholder=""><br>
 </form>
+=======
+<div *ngIf="loaded == true">
+    <label>First Name:&nbsp;</label>
+    <input [(ngModel)]="user$.firstName" placeholder=" First Name"><br>
+    <label>Last Name:&nbsp;</label>
+    <input [(ngModel)]="user$.lastName" placeholder=" Last Name"><br>
+    <label>Email:&nbsp;</label>
+    <input [(ngModel)]="user$.email" placeholder=" Email"><br>
+    <label>Gender:&nbsp;</label>
+    <input [(ngModel)]="user$.gender" placeholder=" Gender"><br>
+    <!-- <input [checked]="user$.gender == maleKey" [(ngModel)]="user$.gender" type="radio"> Male
+    <input [checked]="user$.gender != maleKey" [(ngModel)]="user$.gender" type="radio"> Female<br> -->
+    <label>Age:&nbsp;</label>
+    <input [(ngModel)]="user$.age" placeholder=" Age"><br>
+<div>
+>>>>>>> fa0bba42ff6ca03175aeeb6dd22a6260f3bba27c

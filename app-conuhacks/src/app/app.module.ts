@@ -4,7 +4,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import {HttpClientModule} from '@angular/common/http';
-//import { AngularFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,7 +39,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    //AngularFirestore,
+    FormsModule,
     NgbModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
