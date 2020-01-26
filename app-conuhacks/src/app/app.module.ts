@@ -12,13 +12,15 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
+import { PoolComponent } from './components/pool/pool.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    BsNavbarComponent
+    BsNavbarComponent,
+    PoolComponent
   ],
   imports: [
     BrowserModule,
