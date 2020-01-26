@@ -19,6 +19,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { MatchComponent } from './components/match/match.component';
 import { SearchComponent } from './components/search/search.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { GuidComponent } from './components/guid/guid.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     RegisterComponent,
     MatchComponent,
     SearchComponent,
-    ProfileComponent
+    ProfileComponent,
+    GuidComponent
   ],
   imports: [
     BrowserModule,

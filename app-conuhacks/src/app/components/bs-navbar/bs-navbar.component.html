@@ -1,35 +1,4 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-<<<<<<< HEAD
-    <a class="navbar-brand" routerLink="/">200 OK</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav mr-auto">
-        <ng-template #anonymousUser>
-          <div class="nav">
-            <a class="nav-link" routerLink="/login">Login</a>
-            <a class="nav-link" routerLink="/search">Search</a>
-          </div>
-        </ng-template>
-        <li ngbDropdown *ngIf="user$ | async as user; else anonymousUser" class="nav-item dropdown">
-          <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            {{ user.displayName }}
-          </a>
-          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" routerLink="/profile">Profile</a>
-          </div>
-          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" (click)="logout()">Log Out</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-=======
   <a class="navbar-brand" routerLink="/">200 OK</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
     aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +12,9 @@
           <a class="nav-link" routerLink="/login">Login</a>
         </li> -->
       </ng-template>
-      <li *ngIf="user$ | async as user" class="nav-item">
+      <!-- <li *ngIf="user$ | async as user" class="nav-item">
         <a class="nav-link" routerLink="/search">Search</a>
-      </li>
+      </li> -->
       <li ngbDropdown *ngIf="user$ | async as user; else anonymousUser" class="nav-item dropdown">
         <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -53,12 +22,11 @@
         </a>
         <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
           <a class="dropdown-item" routerLink="/profile">Profile</a>
-        </div>
-        <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" routerLink="/search">Search</a>
+          <a class="dropdown-item" routerLink="/profile">Matches</a>
           <a class="dropdown-item" (click)="logout()">Log Out</a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
->>>>>>> fa0bba42ff6ca03175aeeb6dd22a6260f3bba27c

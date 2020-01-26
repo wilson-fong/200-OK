@@ -18,6 +18,10 @@ export class HttpServiceService {
   }
 
   getMyHashtags() {
-    return this.httpClient.get(this.url + "/user-hashtags.json").toPromise();
+    return this.httpClient.get(this.url + "user-hashtags.json").toPromise();
+  }
+
+  submitHashtags(uid, hashtags) {
+    return this.httpClient.post(this.url + "user-hashtags/" + uid + ".json", hashtags).toPromise();
   }
 }
