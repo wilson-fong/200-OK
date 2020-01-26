@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import {HttpClientModule} from '@angular/common/http';
+//import { AngularFirestore } from '@angular/fire/firestore';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,7 @@ import { BsNavbarComponent } from './components/bs-navbar/bs-navbar.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MatchComponent } from './components/match/match.component';
 import { SearchComponent } from './components/search/search.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,19 +27,23 @@ import { SearchComponent } from './components/search/search.component';
     BsNavbarComponent,
     RegisterComponent,
     MatchComponent,
-    SearchComponent
+    SearchComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    //AngularFirestore,
     NgbModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'login', component: LoginComponent },
       { path: 'search', component: SearchComponent },
+      { path: 'profile', component: ProfileComponent }
     ])
   ],
   providers: [],
